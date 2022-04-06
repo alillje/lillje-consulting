@@ -29,8 +29,12 @@ const Header = (props) => {
             <Navbutton name="Tjänster" buttonColor={buttonColor} ></Navbutton>
         </NavLink>
 
-        <NavLink to="/about">
+        <NavLink to="/om-oss">
             <Navbutton name="Om oss" buttonColor={buttonColor} ></Navbutton>
+        </NavLink>
+
+        <NavLink to="/kontakta-oss">
+            <Navbutton name="Kontakt" buttonColor={buttonColor} ></Navbutton>
         </NavLink>
         </Menu>
     </div>

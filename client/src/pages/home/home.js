@@ -1,31 +1,32 @@
 import CardGroup from 'react-bootstrap/CardGroup';
 import Card from 'react-bootstrap/Card'
+import { Link } from 'react-router-dom';
+
+import './home.css'
 
 
 
 const Home = () => {
   return (
-    <>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit nihil unde, dolor nobis, non ducimus est modi explicabo cumque tempora sed ipsa, nam odio exercitationem. Dignissimos ipsa dolor autem illum?
-    Id quod quidem dolore perferendis, explicabo, labore ab error similique unde neque eaque tenetur quo nulla facilis odit veniam, iure aliquam impedit amet velit molestias nostrum facere doloribus? Culpa, pariatur.
-    Nemo pariatur accusamus, porro alias facere aspernatur vel esse expedita, perferendis et impedit dicta totam ab? Aliquid numquam tempora nulla quas delectus dignissimos fugit! Dolor eos quidem iusto suscipit ducimus?
-    Doloremque, voluptas soluta fugiat error pariatur veritatis consectetur rerum excepturi. Quo omnis blanditiis laboriosam ipsam debitis odio, illo aut iure voluptatum mollitia, dolorum nam vitae. Necessitatibus nemo mollitia beatae totam.
-    Omnis veritatis voluptatem laborum reprehenderit corrupti? Fugiat nulla pariatur sequi. Quam optio iure facere quaerat delectus suscipit et est amet doloremque, aut ipsa similique eveniet corporis temporibus ducimus illo id.
-    Quaerat nisi recusandae natus debitis expedita sed maiores aliquid delectus distinctio, explicabo illo harum mollitia accusamus, odio minima sequi officiis numquam dolorem. Atque nam expedita exercitationem veritatis reprehenderit itaque eos.
-    Neque laborum, ea maxime alias blanditiis itaque aut velit, placeat facere, totam porro doloribus. Distinctio, dolore. Tenetur praesentium, dolor aspernatur ducimus mollitia veritatis molestias at repellat architecto, voluptatibus non iste.
-    Eius ipsam iusto vitae ea unde veniam modi tempora maxime, ex voluptates quasi molestias similique labore molestiae, suscipit sequi dolorum animi earum, expedita dolor debitis perferendis! Consequuntur id quia non.
-    Vero quaerat hic, dolore reiciendis dolor fugiat placeat. Deleniti officia iure ut expedita voluptate ea, fugit fugiat voluptatibus consectetur! Provident tenetur quisquam distinctio exercitationem natus libero ut quaerat dicta quibusdam.
-    Reprehenderit neque a deleniti, at nulla ullam praesentium voluptatibus consequatur incidunt doloremque magni libero natus minima autem similique sequi est dignissimos. Fugiat eos culpa magnam corporis ad expedita libero incidunt.
-    Aspernatur unde doloribus sunt et temporibus nemo tempore nostrum quod. Aliquid vero in amet dolores asperiores a voluptas mollitia sequi distinctio reiciendis, error soluta debitis corrupti nam laboriosam dicta vel!
-    Nihil quod mollitia quisquam sapiente corrupti dicta vel illum, natus animi delectus temporibus iure voluptates accusamus a, quidem veniam in sit? Harum ullam error nostrum sunt perferendis saepe, consequatur eveniet.
-    Illum eum est quos impedit et, eius voluptatum omnis fuga itaque eveniet animi quas assumenda maiores modi harum repellat ullam veritatis fugit? Praesentium molestias deleniti dicta dolore magnam, voluptatibus provident!
-    Alias, fugit. Quidem maiores possimus id saepe? Provident, earum. Dolore voluptas quia laudantium harum, explicabo totam veniam culpa quas modi perspiciatis eius? Velit quae obcaecati esse rerum animi magnam ipsa.
-    Recusandae quia enim reiciendis repellendus possimus tempore quis, incidunt, odio, sapiente impedit unde ullam autem! Quae nisi sunt possimus quos dolores quidem corporis accusamus cumque alias, voluptatum quaerat ducimus est?
-    Iste nemo minus consequuntur numquam fugit voluptate autem at assumenda beatae doloremque, optio obcaecati veniam ab molestiae similique culpa in quos temporibus qui cum quis. Sapiente cupiditate quasi totam impedit?
-    Quasi aperiam inventore id, ullam dolorem quo culpa voluptas totam sint nostrum, magnam distinctio amet nesciunt possimus facilis at velit nemo? Voluptatum, sint culpa! Voluptas dolor consequuntur et a eaque.
-    Ratione soluta totam fugit iste dolore cupiditate? Delectus eius magnam natus! Earum sequi illum totam asperiores est aut molestiae, id minima natus mollitia. Nesciunt est magnam eveniet blanditiis aliquam libero?
-    Nostrum, ducimus debitis unde voluptatibus sed, fugiat eaque eius cum neque animi sit, distinctio quae. Facilis inventore doloremque tempore assumenda, optio vel quo libero minima expedita officiis veritatis. Voluptatem, provident.
-    Voluptatem explicabo dolore adipisci delectus, nemo officiis, possimus corrupti nobis deserunt, rerum neque. Officia veritatis provident modi aliquam tenetur beatae molestias eveniet dolorum atque quam? Eum facilis molestiae aut itaque.</p>
+    <div className="homeContainer">
+    <div className="homeJumbotron">
+        <h1>Alltid nära till hands</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident totam, facere ipsam dolores qui maiores dicta molestias explicabo exercitationem veritatis magni, aliquam corporis cupiditate similique. Blanditiis eaque voluptatum nisi vel?
+    Autem earum incidunt rerum non modi quidem, aut sit error.</p>
+    <Link to="kontakta-oss"><button className="homeJumbotronBtn">Kontakta oss</button></Link>
+    </div>
+
+    <p className="homeParagraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis dolorem quas fuga qui maiores recusandae fugiat ea soluta quod adipisci sapiente provident facere illo, nisi placeat, aliquid doloremque. Aut, debitis.
+    Doloribus, voluptas molestiae deserunt laudantium qui voluptatum recusandae nobis illum maiores veniam inventore? Velit dolore delectus ut? Placeat libero, esse deserunt illum blanditiis dolores natus dolore sequi, consequatur, assumenda reiciendis.
+    Quis nihil ipsum blanditiis vitae ratione ea similique quia delectus magnam laborum consequuntur unde eum ut molestiae laboriosam neque nulla maiores sed perferendis quo eius, sit quod voluptas sunt? Totam!
+    Quos, sed tenetur. Beatae voluptatibus quibusdam magnam sint delectus aut, ex eaque aperiam est sequi modi rem numquam doloribus vel debitis amet porro eveniet natus quos sit quidem explicabo illum.
+    Suscipit fuga aliquam nihil amet veniam itaque nam pariatur fugiat labore animi optio officia, sapiente voluptatibus impedit quas, reiciendis magni dignissimos ipsam repellat perspiciatis aspernatur quia deserunt delectus! Voluptates, cum!
+    Consequatur rerum minima, ad soluta rem deleniti ducimus similique id ipsam adipisci quae, sint corrupti perspiciatis suscipit recusandae esse. Quo nostrum magni sequi doloremque soluta blanditiis explicabo dolores atque consequatur.
+    Sint maxime laborum quo expedita sapiente veritatis odit laboriosam autem voluptas, placeat impedit suscipit accusantium ratione tempora minima obcaecati, culpa reiciendis fuga officia! Explicabo fugiat, asperiores magnam suscipit iusto aperiam.
+    Eveniet obcaecati numquam fuga voluptas optio, molestias doloremque voluptate! Soluta facilis modi officiis beatae delectus. Maxime perferendis perspiciatis quae at sunt dolor officia aliquid debitis necessitatibus, error, odio sit quos?
+    Ducimus nesciunt iure quo similique ad porro? Accusantium eum at molestiae porro magni quia numquam! Neque unde quis laboriosam voluptate earum itaque velit esse, incidunt laborum ex nobis totam dolore?
+    Maiores repellat assumenda sapiente fugit, dolorum ullam facere delectus aut praesentium corrupti et, fuga odio excepturi veritatis, fugiat repudiandae. Libero officiis perspiciatis ipsum exercitationem deserunt accusantium ullam nesciunt corporis veritatis?</p>
+
 <CardGroup>
   <Card>
     <Card.Body>
@@ -65,7 +66,7 @@ const Home = () => {
     </Card.Footer>
   </Card>
 </CardGroup>  
-</>)
+</div>)
 }
 
 export default Home;
