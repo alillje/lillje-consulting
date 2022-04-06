@@ -8,12 +8,13 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 // Pages
-import Home from "./pages/home";
-import About from "./pages/about";
-import Error from "./pages/error";
+import Home from "./pages/home/home";
+import About from "./pages/about/about";
+import Error from "./pages/error/error";
 
 // Header
 import Header from "./components/header/header";
+import Footer from "./components/footer/footer";
 
 // MainContent holder
 
@@ -34,6 +35,7 @@ function App() {
             <Route path="/*" element={<Error />} />
           </Routes>
         </main>
+        <Footer></Footer>
       </div>
     </Router>
   );
