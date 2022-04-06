@@ -1,10 +1,4 @@
-
-.homeContainer {
-    width: 100%;
-    margin: 0% 0% 5% 0%;
-}
-
-/* .homeJumbotron {
+.jumbotronContainer {
     width: 100%;
     height: 20rem;
     background: rgb(20,47,47);
@@ -12,7 +6,7 @@
     margin-bottom: 5rem;
 }
 
-.homeJumbotron h1 {
+.jumbotronContainer h1 {
     font-size: 2.5rem;
     color: #ffffff;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -21,7 +15,7 @@
     padding: 5% 0% 0% 10%;
 }
 
-.homeJumbotron p {
+.jumbotronContainer p {
     font-size: 0.9rem;
     color: #ffffff;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -29,7 +23,7 @@
     padding: 0% 10% 0% 10%;
 }
 
-.homeJumbotronBtn {
+.jumbotronContainerBtn {
     width: 10rem;
     height: 3rem;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -40,8 +34,4 @@
     border: none;
     border-radius: 30px;
     font-size: 1.2rem;
-} */
-
-.homeParagraph {
-    margin: 0% 0% 10% 0%;
 }
