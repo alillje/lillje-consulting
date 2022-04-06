@@ -1,0 +1,19 @@
+.headerNavButton {
+    background-color: white;
+    color: #000000;
+    width: 8rem;
+    text-align: center;
+    font-size: 1.1rem;
+    border-bottom: 1px solid white;
+    box-shadow: none;
+    padding-bottom: 5px;
+    transition: 0.5s;
+
+
+}
+
+.headerNavButton:hover {
+    padding-bottom: none;
+    border-bottom: 1px solid rgb(194, 122, 122);
+
+}
