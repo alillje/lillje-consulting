@@ -3,7 +3,6 @@ import "./header.css";
 import { NavLink } from 'react-router-dom';
 
 
-import { Menu } from "antd";
 import Navbutton from "../navbutton/navbutton"
 import Logo from './img/lillje-consulting-logo-1.svg';
 
@@ -24,7 +23,7 @@ const Header = (props) => {
             </div> 
 
 
-        <Menu className="headerMenu" mode="horizontal" defaultSelectedKeys={["Personal"]}>
+        <ul className="headerMenu">
         <NavLink to="/">
             <Navbutton name="Tjänster" buttonColor={buttonColor} ></Navbutton>
         </NavLink>
@@ -36,9 +35,24 @@ const Header = (props) => {
         <NavLink to="/kontakta-oss">
             <Navbutton name="Kontakt" buttonColor={buttonColor} ></Navbutton>
         </NavLink>
-        </Menu>
+        </ul>
     </div>
   );
 };
 
 export default Header;
+
+
+/* <Menu className="headerMenu" mode="horizontal" defaultSelectedKeys={["Personal"]}>
+<NavLink to="/">
+    <Navbutton name="Tjänster" buttonColor={buttonColor} ></Navbutton>
+</NavLink>
+
+<NavLink to="/om-oss">
+    <Navbutton name="Om oss" buttonColor={buttonColor} ></Navbutton>
+</NavLink>
+
+<NavLink to="/kontakta-oss">
+    <Navbutton name="Kontakt" buttonColor={buttonColor} ></Navbutton>
+</NavLink>
+</Menu> */

@@ -1,19 +1,23 @@
 import CardGroup from "react-bootstrap/CardGroup";
 import Card from "react-bootstrap/Card";
-import { Link } from "react-router-dom";
+import { motion } from 'framer-motion'
 import Jumbotron from "/Users/andreaslillje/Documents/WP/1DV613/projects/lillje-consulting-ab-external/client/src/components/jumbotron/jumbotron";
 
 import "./home.css";
 
 const Home = () => {
   return (
+    <motion.div 
+    initial={{ opacity: 0 }} 
+    animate={{ opacity: 1 }} 
+    exit={{ opacity: 0}}>
     <div className="homeContainer">
       <Jumbotron
         title="Alltid nära till hands"
         text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident totam, facere ipsam dolores qui maiores dicta molestias explicabo exercitationem veritatis magni, aliquam corporis cupiditate similique. Blanditiis eaque voluptatum nisi vel?
     Autem earum incidunt rerum non modi quidem, aut sit error."
         buttonText="Kontakta oss"
-        linkPath="kontak"
+        linkPath="kontakta-oss"
       ></Jumbotron>
       <p className="homeParagraph">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis dolorem
@@ -52,47 +56,50 @@ const Home = () => {
         corporis veritatis?
       </p>
 
-      <CardGroup>
-        <Card>
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
-        <Card>
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This card has supporting text below as a natural lead-in to
-              additional content.{" "}
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
-        <Card>
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This card has even longer content
-              than the first to show that equal height action.
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
-      </CardGroup>
+      <CardGroup className="homeCardGroup">
+  <Card>
+    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Body>
+      <Card.Title>Card title</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+  <Card>
+    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Body>
+      <Card.Title>Card title</Card.Title>
+      <Card.Text>
+        This card has supporting text below as a natural lead-in to additional
+        content.{' '}
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+  <Card>
+    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Body>
+      <Card.Title>Card title</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This card has even longer content than the first to
+        show that equal height action.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+</CardGroup>
     </div>
+    </motion.div>
   );
 };
 

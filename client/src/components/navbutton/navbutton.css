@@ -1,19 +1,26 @@
 .headerNavButton {
+    display: flex;
     background-color: white;
     color: #000000;
     width: 8rem;
+    height: 4rem;
     text-align: center;
     font-size: 1.1rem;
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+
     box-shadow: none;
     padding-bottom: 5px;
-    transition: 0.5s;
+    transition: 0.6s;
+    justify-content: center;
+    align-items: center;
 
 
 }
 
 .headerNavButton:hover {
     padding-bottom: none;
-    border-bottom: 1px solid rgb(194, 122, 122);
-
+    border-right: 1px solid rgb(194, 122, 122);
+    border-left: 1px solid rgb(194, 122, 122);
 }

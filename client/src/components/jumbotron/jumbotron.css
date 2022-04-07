@@ -29,9 +29,15 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 300;
     margin: 0% 10% 0% 10%;
-    background-color: #b75b69;
+    background-color: #892131;
     color: white;
     border: none;
-    border-radius: 30px;
+    border-radius: 10px;
     font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.jumbotronContainerBtn:hover {
+    background-color: #84303c;
+
 }

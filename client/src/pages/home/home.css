@@ -43,5 +43,16 @@
 } */
 
 .homeParagraph {
-    margin: 0% 0% 10% 0%;
+    margin: 0% 10% 10% 10%;
+}
+
+.homeCardGroup {
+    margin: 0% 10% 10% 10%;
+}
+
+.card {
+    transition: 0.5s;
+}
+.card:hover {
+    background-color: rgb(231, 231, 231);
 }

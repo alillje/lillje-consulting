@@ -2,9 +2,6 @@
   width: 80%;
   min-width: 500px;
   margin: 0 auto;
-  /* border-left: 1px solid rgba(194, 122, 122, 0.443);
-  border-right: 1px solid rgba(194, 122, 122, 0.443);
-  border-bottom: 1px solid rgba(194, 122, 122, 0.443); */
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
@@ -23,5 +20,8 @@
 
 main {
     width: 100%;
-    padding: 0% 0% 10% 0%;
+    padding: 0% 0% 0% 0%;
+    font-size: 0.9rem;
+    line-height: 1.6;
+
 }

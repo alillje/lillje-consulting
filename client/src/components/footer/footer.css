@@ -8,7 +8,7 @@
     background-color: inherit;
     align-items: center;
     justify-content: center;
-    gap: 7rem;
+    /* gap: 7rem; */
 }
 
 .linksContainer {
@@ -22,9 +22,13 @@
 .footerLink {
     color: #747474;
     font-size: 0.9rem;;
+    padding: 7rem;
 }
 
 .footerLink:hover {
     color: #000000;
+}
 
+.footerContainer a {
+    text-decoration: none;
 }
