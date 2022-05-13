@@ -15,6 +15,7 @@ import Logo from './img/lillje-consulting-logo-1.svg';
 const Header = (props) => {
     const { buttonColor } = props;
   return (
+      <>
     <div className="headerContainer">
         <div className="headerLogo">
             <NavLink to="/">
@@ -37,6 +38,8 @@ const Header = (props) => {
         </NavLink>
         </ul>
     </div>
+    <div className="mobileHeaderContainer"></div>
+    </>
   );
 };
 

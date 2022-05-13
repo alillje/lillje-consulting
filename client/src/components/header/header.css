@@ -40,3 +40,17 @@
 .headerContainer a {
     text-decoration: none;
 }
+
+.mobileHeaderContainer {
+    display: none
+}
+
+@media screen and (max-width: 700px) {
+    .mobileHeaderContainer {
+        display: flex
+    } 
+
+    .headerContainer {
+        display: none;
+    }
+}
