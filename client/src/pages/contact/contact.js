@@ -9,12 +9,12 @@ const Contact = () => {
       exit={{ opacity: 0 }}
     >
       <div className="contactContainer">
+        <div className="contactTitle">
+          <h1>Kontakta oss</h1>
+        </div>
+        <div className="contactMapAndInfo">
         <div className="contactInfo">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum minima recusandae accusamus eius odit! Necessitatibus vitae nemo perspiciatis reprehenderit recusandae pariatur, perferendis eligendi nobis consequuntur eum sit illum eaque cum.
-          Perspiciatis odio accusamus tenetur sequi iusto debitis assumenda. Voluptatum, quis. Quae dolorem aspernatur quibusdam animi delectus vero doloremque explicabo rerum esse ut, ullam itaque minima error qui tempore voluptatum possimus?
-          Dicta unde saepe earum dolorem consectetur, magni, possimus voluptas, maxime voluptatibus accusamus quidem eveniet quasi aliquid! Corrupti, porro, omnis voluptatum aliquid cupiditate esse fugit eaque velit, quisquam rem voluptates repellat!
-          Delectus commodi sint voluptate fugit, itaque, enim odio quae pariatur sapiente molestiae corrupti, exercitationem neque voluptatibus non reiciendis autem officia. Accusamus sint doloribus illo, repellat quam repudiandae ipsum quos itaque!
-          Illo sequi vel doloribus ipsa quisquam id. Fuga autem, et saepe accusamus, officiis delectus beatae magni dignissimos totam a suscipit corrupti? Quas eum dignissimos iusto at voluptatum provident perspiciatis nesciunt.
         </div>
         <div className="mapContainer">
 
@@ -28,6 +28,7 @@ const Contact = () => {
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
+        </div>
                 </div>
 
       </div>

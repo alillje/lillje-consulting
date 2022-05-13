@@ -1,9 +1,10 @@
 
 .contactContainer {
     width: 100%;
+    height: 100%;
     margin: 5% 0% 5% 0%;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .mapContainer {
@@ -20,4 +21,20 @@
 .contactMap {
     width: 100%;
     margin: 10%;
+}
+
+.contactTitle {
+    width:100%;
+    display: flex;
+    justify-content: center
+}
+
+.contactTitle h1 {
+
+}
+
+.contactMapAndInfo {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
 }

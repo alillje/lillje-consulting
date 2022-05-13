@@ -43,17 +43,3 @@ function App() {
 
 export default App;
 
-// function App () {
-//   return (
-//   <Router>
-//       <Navbar>
-//       </Navbar>
-//       <Routes>
-//     <Route exact path="/" element={<Home/>} />
-//     <Route path="/about" element={<About/>} />
-//     <Route path="/*" element={<Error/>} />
-
-//     </Routes>
-//   </Router>
-//   )
-// };
