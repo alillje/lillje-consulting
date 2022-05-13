@@ -5,10 +5,10 @@ const About = () => {
       <motion.div 
       initial={{ opacity: 0 }} 
       animate={{ opacity: 1 }} 
-      exit={{ opacity: 0}}>
-      <div>
-          <h2>About</h2>
-      </div>
+      exit={{ opacity: 0}}
+      className="aboutContainer">
+      
+          <div className="aboutTitle"><h2>About</h2></div>
       </motion.div>
 
     );

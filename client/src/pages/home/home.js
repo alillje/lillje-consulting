@@ -2,6 +2,7 @@ import CardGroup from "react-bootstrap/CardGroup";
 import Card from "react-bootstrap/Card";
 import { motion } from 'framer-motion'
 import Jumbotron from "/Users/andreaslillje/Documents/WP/1DV613/projects/lillje-consulting-ab-external/client/src/components/jumbotron/jumbotron";
+import { Link } from 'react-router-dom';
 
 import "./home.css";
 
@@ -14,89 +15,43 @@ const Home = () => {
     <div className="homeContainer">
       <Jumbotron
         title="Alltid nära till hands"
-        text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident totam, facere ipsam dolores qui maiores dicta molestias explicabo exercitationem veritatis magni, aliquam corporis cupiditate similique. Blanditiis eaque voluptatum nisi vel?
-    Autem earum incidunt rerum non modi quidem, aut sit error."
+        text="Är du intresserad av våra tjänster? Eller är du redan befintlig kund? Vi finns alltid här för att svara på era frågor. "
         buttonText="Kontakta oss"
         linkPath="kontakta-oss"
+        className="homeJumbo"
       ></Jumbotron>
-      <p className="homeParagraph">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis dolorem
-        quas fuga qui maiores recusandae fugiat ea soluta quod adipisci sapiente
-        provident facere illo, nisi placeat, aliquid doloremque. Aut, debitis.
-        Doloribus, voluptas molestiae deserunt laudantium qui voluptatum
-        recusandae nobis illum maiores veniam inventore? Velit dolore delectus
-        ut? Placeat libero, esse deserunt illum blanditiis dolores natus dolore
-        sequi, consequatur, assumenda reiciendis. Quis nihil ipsum blanditiis
-        vitae ratione ea similique quia delectus magnam laborum consequuntur
-        unde eum ut molestiae laboriosam neque nulla maiores sed perferendis quo
-        eius, sit quod voluptas sunt? Totam! Quos, sed tenetur. Beatae
-        voluptatibus quibusdam magnam sint delectus aut, ex eaque aperiam est
-        sequi modi rem numquam doloribus vel debitis amet porro eveniet natus
-        quos sit quidem explicabo illum. Suscipit fuga aliquam nihil amet veniam
-        itaque nam pariatur fugiat labore animi optio officia, sapiente
-        voluptatibus impedit quas, reiciendis magni dignissimos ipsam repellat
-        perspiciatis aspernatur quia deserunt delectus! Voluptates, cum!
-        Consequatur rerum minima, ad soluta rem deleniti ducimus similique id
-        ipsam adipisci quae, sint corrupti perspiciatis suscipit recusandae
-        esse. Quo nostrum magni sequi doloremque soluta blanditiis explicabo
-        dolores atque consequatur. Sint maxime laborum quo expedita sapiente
-        veritatis odit laboriosam autem voluptas, placeat impedit suscipit
-        accusantium ratione tempora minima obcaecati, culpa reiciendis fuga
-        officia! Explicabo fugiat, asperiores magnam suscipit iusto aperiam.
-        Eveniet obcaecati numquam fuga voluptas optio, molestias doloremque
-        voluptate! Soluta facilis modi officiis beatae delectus. Maxime
-        perferendis perspiciatis quae at sunt dolor officia aliquid debitis
-        necessitatibus, error, odio sit quos? Ducimus nesciunt iure quo
-        similique ad porro? Accusantium eum at molestiae porro magni quia
-        numquam! Neque unde quis laboriosam voluptate earum itaque velit esse,
-        incidunt laborum ex nobis totam dolore? Maiores repellat assumenda
-        sapiente fugit, dolorum ullam facere delectus aut praesentium corrupti
-        et, fuga odio excepturi veritatis, fugiat repudiandae. Libero officiis
-        perspiciatis ipsum exercitationem deserunt accusantium ullam nesciunt
-        corporis veritatis?
-      </p>
+
 
       <CardGroup className="homeCardGroup">
   <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
+    {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
     <Card.Body>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title>Verksamhet</Card.Title>
       <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
+        Är du intresserad av våra tjänster? Läs mer om vår verksamhet och se om våra tjänster passar ert företag. 
       </Card.Text>
     </Card.Body>
+    <Link to="/om-oss">
     <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
+    <small className="text-muted"><Link to="https://lilljeconsultingcustomer.netlify.app">Om oss &#187;</Link></small>
     </Card.Footer>
+    </Link>
   </Card>
   <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
+    {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
     <Card.Body>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title>Kundportal</Card.Title>
       <Card.Text>
-        This card has supporting text below as a natural lead-in to additional
-        content.{' '}
+        Är du befintlig kund hos oss? <Link to="/kontakta-oss">Kontakta oss</Link> för att skapa ett konto på vår kundportal. {' '}
       </Card.Text>
     </Card.Body>
+    <a href="https://lilljeconsultingcustomer.netlify.app" target="_blank" rel="noopener noreferrer">
     <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
+      <small className="text-muted">Kundportal &#187;</small>
     </Card.Footer>
+    </a>
   </Card>
-  <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This card has even longer content than the first to
-        show that equal height action.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
+
 </CardGroup>
     </div>
     </motion.div>
