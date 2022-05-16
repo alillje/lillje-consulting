@@ -38,7 +38,6 @@ const Home = () => {
     </Link>
   </Card>
   <Card>
-    {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
     <Card.Body>
       <Card.Title>Kundportal</Card.Title>
       <Card.Text>

@@ -4,7 +4,7 @@
     height: 100%;
     display: grid;
     grid-template-columns:  auto;
-    grid-template-rows: auto;
+    grid-template-rows: auto 70px auto;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     background-color: inherit;;
@@ -19,7 +19,7 @@
 }
 
 .homeCardGroup {
-    grid-row: 2;
+    grid-row: 3;
 
     margin: 0% 10% 10% 10%;
 }
@@ -29,4 +29,9 @@
 }
 .card:hover {
     background-color: rgb(231, 231, 231);
+}
+
+.homeContainer a {
+    text-decoration: none;
+    color: #868383;
 }

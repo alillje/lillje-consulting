@@ -40,7 +40,7 @@ function App() {
               />
                                       <Route
                 exact
-                path="/om-oss"
+                path="/tjanster"
                 element={<Layout children={<About />} />}
               />
           </Routes>

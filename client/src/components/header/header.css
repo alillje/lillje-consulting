@@ -47,10 +47,12 @@
 
 @media screen and (max-width: 700px) {
     .mobileHeaderContainer {
-        display: flex
+        display: block;
+        width: 100%;
     } 
 
     .headerContainer {
         display: none;
     }
+
 }

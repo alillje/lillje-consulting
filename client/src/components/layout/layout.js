@@ -10,10 +10,11 @@ const Layout = ( {children} ) => {
 
           <div className="layoutHeader"><Header /></div>
           </div>
-          <div className="layoutRight"></div>
+          <div className="layoutLeft"></div>
 
           <div className="layoutMain">{children}</div>
-              <div className="layoutLeft"></div>
+          <div className="layoutRight"></div>
+
               <div className="layoutFooter"><Footer /></div>
 
       </div>
