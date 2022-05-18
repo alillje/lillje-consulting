@@ -1,7 +1,7 @@
 import CardGroup from "react-bootstrap/CardGroup";
 import Card from "react-bootstrap/Card";
 import { motion } from 'framer-motion'
-import Jumbotron from "/Users/andreaslillje/Documents/WP/1DV613/projects/lillje-consulting-ab-external/client/src/components/jumbotron/jumbotron";
+import Jumbotron from "../../components/jumbotron/jumbotron";
 import { Link } from 'react-router-dom';
 
 import "./home.css";
@@ -31,9 +31,9 @@ const Home = () => {
         Är du intresserad av våra tjänster? Läs mer om vår verksamhet och se om våra tjänster passar ert företag. 
       </Card.Text>
     </Card.Body>
-    <Link to="/om-oss">
+    <Link to="/tjanster">
     <Card.Footer>
-    <small className="text-muted"><Link to="https://lilljeconsultingcustomer.netlify.app">Om oss &#187;</Link></small>
+    <small className="text-muted"><Link to="/tjanster">Tjänster & Verksamhet &#187;</Link></small>
     </Card.Footer>
     </Link>
   </Card>

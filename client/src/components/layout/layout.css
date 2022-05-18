@@ -61,7 +61,7 @@
       height: 100%;
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 150px auto 200px;
+      grid-template-rows: 100px auto 200px;
       grid-column-gap: 20px;
       grid-row-gap: 20px;
       background-color: #fcfcfc;
