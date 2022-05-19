@@ -1,0 +1,52 @@
+
+.aboutContainer {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns:  repeat(5, 1fr);
+    grid-template-rows: 60px 1fr min-content auto;;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    background-color: #fcfcfc;
+    padding: 50px;
+  
+}
+
+.aboutTitle {
+    grid-row: 1;
+    grid-column: 1 / 6;
+
+    display:flex;
+    justify-content: center;
+}
+
+.aboutText {
+    grid-row: 2;
+    grid-column: 1 / 6;
+    text-align: center;
+    
+}
+
+.aboutListHeader {
+    grid-row: 3;
+    grid-column: 2 / 5;
+    text-align: center;
+    
+}
+
+
+.aboutList {
+    grid-row: 4;
+    grid-column: 2 / 5;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+.aboutList li {
+    padding-left: 10px;;
+        
+    }

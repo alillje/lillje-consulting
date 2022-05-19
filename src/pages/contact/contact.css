@@ -1,0 +1,42 @@
+
+.contactContainer {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    grid-template-rows: 60px 500px;;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    background-color: #fcfcfc;
+    padding: 50px;
+  
+}
+
+.mapContainer {
+    grid-column: 2 / 3;
+
+
+}
+
+.contactInfo {
+    grid-column: 1 / 2;
+    display: flex;
+}
+
+.contactlistDiv {
+margin-top: 50px;
+}
+
+
+
+.contactTitle {
+    grid-row: 1;
+    grid-column: span 2;;
+    display: flex;
+    justify-content: center
+}
+
+.contactTitle h1 {
+
+}
+
