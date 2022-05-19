@@ -1,12 +1,9 @@
 import React from "react";
 import "./header.css";
 import { NavLink, Link } from 'react-router-dom';
-import Navbar from 'react-bootstrap/Navbar'
-import Container from 'react-bootstrap/Container'
-import Nav from 'react-bootstrap/Nav'
-import NavDropdown from 'react-bootstrap/NavDropdown'
-import Button from 'react-bootstrap/Button'
-import Col from 'react-bootstrap/Col'
+import { useSelector, useDispatch } from 'react-redux'
+import { showSidemenu, hideSidemenu } from '../../redux/reducers/sidemenu'
+
 
 
 
@@ -22,6 +19,21 @@ import menuIcon from './img/menu-icon.png';
  * @return {*} 
  */
 const Header = (props) => {
+    const sidemenu = useSelector((state) => state.sidemenu)
+    const dispatch = useDispatch()
+
+      /**
+   *
+   * @param event
+   */
+  const handleOpenNavMenu = (event) => {
+    if (sidemenu.show) {
+      dispatch(hideSidemenu())
+    } else {
+      dispatch(showSidemenu())
+    }
+  }
+
 
     const { buttonColor } = props;
   return (
@@ -46,9 +58,13 @@ const Header = (props) => {
     </div>
     <div className="mobileHeaderContainer">
         <div className="mobileHeaderLogoContainer">
+        <NavLink to="/">
+
     <img src={Logo} alt="logo" className="mobileHeaderLogo"></img>
+    </NavLink>
+
     </div>
-    <img src={menuIcon} alt="logo" className="mobileHeaderMenuIcon"></img>
+    <img src={menuIcon} alt="logo" className="mobileHeaderMenuIcon" onClick={handleOpenNavMenu}></img>
 
  
     </div>
