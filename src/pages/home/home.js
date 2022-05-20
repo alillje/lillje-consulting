@@ -46,7 +46,7 @@ const Home = () => {
         Är du befintlig kund hos oss? <Link to="/kontakta-oss">Kontakta oss</Link> för att skapa ett konto på vår kundportal. {' '}
       </Card.Text>
     </Card.Body>
-    <a href="https://lilljeconsultingcustomer.netlify.app" target="_blank" rel="noopener noreferrer">
+    <a href="https://customer.lilljeconsulting.com/" target="_blank" rel="noopener noreferrer">
     <Card.Footer>
       <small className="text-muted">Kundportal &#187;</small>
     </Card.Footer>
