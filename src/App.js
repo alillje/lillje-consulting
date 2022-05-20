@@ -21,6 +21,9 @@ import Footer from "./components/footer/footer";
 
 // MainContent holder
 
+/**
+ *
+ */
 function App() {
   const backgroundColor = "#ffffff";
   return (
@@ -31,17 +34,17 @@ function App() {
           <Route
                 exact
                 path="/"
-                element={<Layout children={<Home />} />}
+                element={<Layout><Home /></Layout>}
               />
                         <Route
                 exact
                 path="/kontakta-oss"
-                element={<Layout children={<Contact />} />}
+                element={<Layout><Contact /></Layout>}
               />
                                       <Route
                 exact
                 path="/tjanster"
-                element={<Layout children={<About />} />}
+                element={<Layout><About /></Layout>}
               />
           </Routes>
           </AnimatePresence>

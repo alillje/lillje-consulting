@@ -5,12 +5,16 @@ import { motion } from "framer-motion";
 import { hideSidemenu } from "../../redux/reducers/sidemenu";
 import MobileNavbutton from "../mobile-navbutton/mobile-navbutton";
 
+/**
+ *
+ */
 const MobileMenu = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
   /**
    *
+   * @param event
    */
   const goToPage = (event) => {
     event.preventDefault();
