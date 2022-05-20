@@ -14,15 +14,15 @@ const Footer = (props) => {
   return (
     <div className="footerContainer">
     <div className="footerLinksContainer">
-        <div className="linksContainer">
+        <div className="linksContainerLeft">
         <div><Link to="/" className="footerLink">Hem</Link></div>
         <div><Link to="/tjanster" className="footerLink">Tjänster</Link></div>
         <div><Link to="/kontakta-oss" className="footerLink">Kontakt</Link></div>
 
-        <a href="https://lilljeconsultingcustomer.netlify.app" target="_blank" className="footerLink" rel="noopener noreferrer">Kundportal</a>
+        <a href="https://customer.lilljeconsulting.com/" target="_blank" className="footerLink" rel="noopener noreferrer">Kundportal</a>
 
         </div>
-        <div className="linksContainer">
+        <div className="linksContainerRight">
         <div className="footerLink">Email: katarina.lillje@yahoo.se</div>
         <div className="footerLink">Tel: 0700 000 000</div>
         <div className="footerLink">Ingvar Vikings Väg 11</div>
@@ -35,7 +35,7 @@ const Footer = (props) => {
         <div className="footerLinkMobile"><Link to="/tjanster" className="footerLinkMobile">Tjänster</Link></div>
         <div className="footerLinkMobile"><Link to="/kontakta-oss" className="footerLinkMobile">Kontakt</Link></div>
 
-        <a href="https://lilljeconsultingcustomer.netlify.app" target="_blank" className="footerLink" rel="noopener noreferrer">Kundportal</a>
+        <a href="https://customer.lilljeconsulting.com/" target="_blank" className="footerLink" rel="noopener noreferrer">Kundportal</a>
         <div className="footerLinkMobile">Email: katarina.lillje@yahoo.se</div>
         <div className="footerLinkMobile">Tel: 0700 000 000</div>
         <div className="footerLinkMobile">Ingvar Vikings Väg 11</div>
