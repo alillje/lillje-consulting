@@ -16,16 +16,16 @@ import menuIcon from './img/menu-icon.png';
  * Component
  *
  * @param {*} props
- * @return {*} 
+ * @returns {*} 
  */
 const Header = (props) => {
     const sidemenu = useSelector((state) => state.sidemenu)
     const dispatch = useDispatch()
 
       /**
-   *
-   * @param event
-   */
+       *
+       * @param event
+       */
   const handleOpenNavMenu = (event) => {
     if (sidemenu.show) {
       dispatch(hideSidemenu())
@@ -35,6 +35,10 @@ const Header = (props) => {
   }
 
   // Closes the mobile menu when the user clicks
+  /**
+   *
+   * @param event
+   */
   const closeMenu = (event) => {
     if (sidemenu.show) {
       dispatch(hideSidemenu())

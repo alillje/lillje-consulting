@@ -3,6 +3,10 @@ import './jumbotron.css'
 import { Link } from 'react-router-dom';
 
 
+/**
+ *
+ * @param props
+ */
 const Jumbotron = (props) => {
     const { title, text, buttonText, linkPath } = props
     return (

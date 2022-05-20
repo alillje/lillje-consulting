@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "antd": "^4.19.5",
     "bootstrap": "^3.4.1",
+    "eslint-plugin-react": "^7.30.0",
     "framer-motion": "^6.2.9",
     "react": "^18.0.0",
     "react-bootstrap": "^2.2.3",
@@ -25,7 +26,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "npx eslint ./src || exit 0",
+    "lint:fix": "npx eslint ./src --fix || exit 0"
   },
   "eslintConfig": {
     "extends": [
@@ -44,5 +47,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-plugin-jsdoc": "^39.3.0"
   }
 }

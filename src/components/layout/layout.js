@@ -5,6 +5,11 @@ import MobileMenu from "../mobile-menu/mobile-menu"
 import { useSelector } from "react-redux";
 import sidemenu from "../../redux/reducers/sidemenu";
 
+/**
+ *
+ * @param root0
+ * @param root0.children
+ */
 const Layout = ({ children }) => {
   const sidemenu = useSelector((state) => state.sidemenu);
 

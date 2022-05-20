@@ -3,6 +3,9 @@ import Typography from "@mui/material/Typography";
 
 import "./about.css";
 
+/**
+ *
+ */
 const About = () => {
   return (
     <motion.div

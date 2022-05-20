@@ -8,13 +8,13 @@ import { Link } from 'react-router-dom';
  * Component
  *
  * @param {*} props
- * @return {*} 
+ * @returns {*} 
  */
 const Footer = (props) => {
   return (
     <div className="footerContainer">
     <div className="footerLinksContainer">
-        <div classname="linksContainer">
+        <div className="linksContainer">
         <div><Link to="/" className="footerLink">Hem</Link></div>
         <div><Link to="/tjanster" className="footerLink">Tjänster</Link></div>
         <div><Link to="/kontakta-oss" className="footerLink">Kontakt</Link></div>
@@ -22,7 +22,7 @@ const Footer = (props) => {
         <a href="https://lilljeconsultingcustomer.netlify.app" target="_blank" className="footerLink" rel="noopener noreferrer">Kundportal</a>
 
         </div>
-        <div classname="linksContainer">
+        <div className="linksContainer">
         <div className="footerLink">Email: katarina.lillje@yahoo.se</div>
         <div className="footerLink">Tel: 0700 000 000</div>
         <div className="footerLink">Ingvar Vikings Väg 11</div>
