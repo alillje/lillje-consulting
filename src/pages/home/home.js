@@ -23,8 +23,7 @@ const Home = () => {
 
 
       <CardGroup className="homeCardGroup">
-  <Card>
-    {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
+  <Card className="border">
     <Card.Body>
       <Card.Title>Verksamhet</Card.Title>
       <Card.Text>
@@ -37,7 +36,7 @@ const Home = () => {
     </Card.Footer>
     </Link>
   </Card>
-  <Card>
+  <Card className="border">
     <Card.Body>
       <Card.Title>Kundportal</Card.Title>
       <Card.Text>

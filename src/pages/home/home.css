@@ -4,7 +4,7 @@
     height: 100%;
     display: grid;
     grid-template-columns:  auto;
-    grid-template-rows: auto 70px auto;
+    grid-template-rows: auto 20px auto;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     background-color: inherit;;
@@ -26,6 +26,8 @@
 
 .card {
     transition: 0.5s;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 .card:hover {
     background-color: rgb(231, 231, 231);

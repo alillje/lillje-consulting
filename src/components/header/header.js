@@ -34,6 +34,13 @@ const Header = (props) => {
     }
   }
 
+  // Closes the mobile menu when the user clicks
+  const closeMenu = (event) => {
+    if (sidemenu.show) {
+      dispatch(hideSidemenu())
+    } 
+  }
+
 
     const { buttonColor } = props;
   return (
@@ -60,7 +67,7 @@ const Header = (props) => {
         <div className="mobileHeaderLogoContainer">
         <NavLink to="/">
 
-    <img src={Logo} alt="logo" className="mobileHeaderLogo"></img>
+    <img src={Logo} alt="logo" onClick={closeMenu} className="mobileHeaderLogo"></img>
     </NavLink>
 
     </div>
