@@ -6,8 +6,6 @@ import Jumbotron from '../../components/jumbotron/jumbotron'
 // Bootstrap components
 import CardGroup from 'react-bootstrap/CardGroup'
 import Card from 'react-bootstrap/Card'
-import CardGroup from "react-bootstrap/CardGroup";
-import Card from "react-bootstrap/Card";
 
 // Framer motion components
 import { motion } from 'framer-motion'
