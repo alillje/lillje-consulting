@@ -1,0 +1,38 @@
+.mobileMenuContainer {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;;
+    grid-template-rows: repeat(3, 150px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    background-color: #fcfcfc;
+}
+
+.menuDiv1 {
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+
+}
+
+.menuDiv2 {
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+}
+
+.menuDiv3 {
+    grid-row: 3;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.mobileMenuContainer a {
+    text-decoration: none;
+}
