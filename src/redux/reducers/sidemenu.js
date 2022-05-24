@@ -8,16 +8,18 @@ export const sidemenuSlice = createSlice({
   },
   reducers: {
     /**
+     * Sets all state variables to values defined in the action object.
      *
-     * @param state
-     * @param action
+     * @param {object} state - Redux state object.
+     * @param {object} action - Object containing the different state values to be set.
      */
     showSidemenu: (state, action) => {
       state.show = true
     },
     /**
+     * Sets values to initialState.
      *
-     * @param state
+     * @param {object} state - Redux state object.
      */
     hideSidemenu: (state) => {
       state.show = false

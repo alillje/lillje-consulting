@@ -1,10 +1,12 @@
-import { motion } from "framer-motion";
-import Typography from "@mui/material/Typography";
-
-import "./about.css";
+import './about.css'
+import React from 'react'
+import { motion } from 'framer-motion'
 
 /**
+ * About Component.
+ * Represents and displays an about page.
  *
+ * @returns {React.ReactElement} - About Component.
  */
 const About = () => {
   return (
@@ -36,7 +38,7 @@ const About = () => {
         </ul>
       </div>
     </motion.div>
-  );
-};
+  )
+}
 
-export default About;
+export default About
