@@ -6,6 +6,8 @@ import Jumbotron from '../../components/jumbotron/jumbotron'
 // Bootstrap components
 import CardGroup from 'react-bootstrap/CardGroup'
 import Card from 'react-bootstrap/Card'
+import CardGroup from "react-bootstrap/CardGroup";
+import Card from "react-bootstrap/Card";
 
 // Framer motion components
 import { motion } from 'framer-motion'
@@ -37,6 +39,7 @@ const Home = () => {
       <Card.Title>Verksamhet</Card.Title>
       <Card.Text>
         Är du intresserad av våra tjänster? Läs mer om vår verksamhet och se om våra tjänster passar ert företag.
+
       </Card.Text>
     </Card.Body>
     <Link to="/tjanster">

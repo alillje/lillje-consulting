@@ -16,7 +16,6 @@ const Contact = () => {
       exit={{ opacity: 0 }}
       className="contactContainer"
     >
-
         <div className="contactTitle">
         <h2>Kontakt</h2>
         </div>
