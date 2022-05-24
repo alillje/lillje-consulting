@@ -1,31 +1,21 @@
-import "./App.css";
-// import "antd/dist/antd.css";
-
-import React from "react";
+import './App.css'
+import React from 'react'
 import { AnimatePresence } from 'framer-motion'
-// React router
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
-import Layout from "./components/layout/layout";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Layout from './components/layout/layout'
 
 // Pages
-import Home from "./pages/home/home";
-import About from "./pages/about/about";
-import Contact from "./pages/contact/contact";
-
-import Error from "./pages/error/error";
-
-// Header
-import Header from "./components/header/header";
-import Footer from "./components/footer/footer";
-
-// MainContent holder
+import Home from './pages/home/home'
+import About from './pages/about/about'
+import Contact from './pages/contact/contact'
 
 /**
+ * App Component.
+ * Represents the application and contains all components.
  *
+ * @returns {React.ReactElement} - App Component.
  */
-function App() {
-  const backgroundColor = "#ffffff";
+function App () {
   return (
     <Router>
 
@@ -50,11 +40,10 @@ function App() {
           </AnimatePresence>
 
     </Router>
-  );
+  )
 }
 
-export default App;
-
+export default App
 
 // function App() {
 //   const backgroundColor = "#ffffff";

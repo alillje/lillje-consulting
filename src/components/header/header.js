@@ -1,32 +1,27 @@
-import React from "react";
-import "./header.css";
-import { NavLink, Link } from 'react-router-dom';
+import './header.css'
+import React from 'react'
+import { NavLink } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { showSidemenu, hideSidemenu } from '../../redux/reducers/sidemenu'
-
-
-
-
-import Navbutton from "../navbutton/navbutton"
-import Logo from './img/lillje-consulting-logo-1.svg';
-import menuIcon from './img/menu-icon.png';
-
+import Navbutton from '../navbutton/navbutton'
+import Logo from './img/lillje-consulting-logo-1.svg'
+import menuIcon from './img/menu-icon.png'
 
 /**
- * Component
+ * Header Component.
+ * Displays a header containing navigation buttons and Logo.
  *
- * @param {*} props
- * @returns {*} 
+ * @param {string} buttonColor - Contains a string that represents a color.
+ * @returns {React.ReactElement} - Admin Customer Card Component.
  */
-const Header = (props) => {
-    const sidemenu = useSelector((state) => state.sidemenu)
-    const dispatch = useDispatch()
+const Header = ({ buttonColor }) => {
+  const sidemenu = useSelector((state) => state.sidemenu)
+  const dispatch = useDispatch()
 
-      /**
-       *
-       * @param event
-       */
-  const handleOpenNavMenu = (event) => {
+  /**
+   * Opens/Closes navigation menu when in mobile view.
+   */
+  const toggleMobileMenu = () => {
     if (sidemenu.show) {
       dispatch(hideSidemenu())
     } else {
@@ -34,19 +29,14 @@ const Header = (props) => {
     }
   }
 
-  // Closes the mobile menu when the user clicks
   /**
-   *
-   * @param event
+   * Closes the mobile menu.
    */
-  const closeMenu = (event) => {
+  const closeMenu = () => {
     if (sidemenu.show) {
       dispatch(hideSidemenu())
-    } 
+    }
   }
-
-
-    const { buttonColor } = props;
   return (
       <>
     <div className="headerContainer">
@@ -54,8 +44,7 @@ const Header = (props) => {
             <NavLink to="/">
             <img src={Logo} alt="logo" className="headerLogo"></img>
             </NavLink>
-            </div> 
-
+            </div>
 
         <ul className="headerMenu">
         <NavLink to="/tjanster">
@@ -75,16 +64,14 @@ const Header = (props) => {
     </NavLink>
 
     </div>
-    <img src={menuIcon} alt="logo" className="mobileHeaderMenuIcon" onClick={handleOpenNavMenu}></img>
+    <img src={menuIcon} alt="logo" className="mobileHeaderMenuIcon" onClick={toggleMobileMenu}></img>
 
- 
     </div>
     </>
-  );
-};
+  )
+}
 
-export default Header;
-
+export default Header
 
 /* <Menu className="headerMenu" mode="horizontal" defaultSelectedKeys={["Personal"]}>
 <NavLink to="/">

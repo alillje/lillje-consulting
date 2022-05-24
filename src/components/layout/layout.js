@@ -1,22 +1,19 @@
-import "./layout.css";
-import Header from "../header/header";
-import Footer from "../footer/footer";
-import MobileMenu from "../mobile-menu/mobile-menu"
-import { useSelector } from "react-redux";
-import sidemenu from "../../redux/reducers/sidemenu";
+import './layout.css'
+import React from 'react'
+import Header from '../header/header'
+import Footer from '../footer/footer'
+import MobileMenu from '../mobile-menu/mobile-menu'
+import { useSelector } from 'react-redux'
 
 /**
+ * Layout Component.
+ * Sets the page layout with CSS grid and inserts the children into the main HTML div element.
  *
- * @param root0
- * @param root0.children
+ * @param {React.ReactElement} children - The React Element to insert into the component.
+ * @returns {React.ReactElement} - Layout Component.
  */
 const Layout = ({ children }) => {
-  const sidemenu = useSelector((state) => state.sidemenu);
-
-  /**
-   *
-   */
-
+  const sidemenu = useSelector((state) => state.sidemenu)
   return (
     <div className="layoutContainer">
       <div className="layoutHeaderContainer">
@@ -39,7 +36,7 @@ const Layout = ({ children }) => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

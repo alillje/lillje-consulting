@@ -5,6 +5,7 @@
   },
   "extends": [
       "plugin:react/recommended",
+      "standard",
       "plugin:jsdoc/recommended"
   ],
   "parserOptions": {

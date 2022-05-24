@@ -1,26 +1,31 @@
-import "./mobile-menu.css";
-import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";
-import { hideSidemenu } from "../../redux/reducers/sidemenu";
-import MobileNavbutton from "../mobile-navbutton/mobile-navbutton";
+import './mobile-menu.css'
+import React from 'react'
+import { useDispatch } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import { hideSidemenu } from '../../redux/reducers/sidemenu'
+import MobileNavbutton from '../mobile-navbutton/mobile-navbutton'
 
 /**
+ * Mobile Menu Component.
+ * Displays a mobile menu with buttons and links. Displayed on mobile devices.
  *
+ * @returns {React.ReactElement} - Mobile Menu Component.
  */
 const MobileMenu = () => {
-  const navigate = useNavigate();
-  const dispatch = useDispatch();
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
 
   /**
+   * Navigates to a specific page.
    *
-   * @param event
+   * @param {object} event - An event object.
    */
   const goToPage = (event) => {
-    event.preventDefault();
-    dispatch(hideSidemenu());
-    navigate(event.target.getAttribute("value"));
-  };
+    event.preventDefault()
+    dispatch(hideSidemenu())
+    navigate(event.target.getAttribute('value'))
+  }
 
   return (
     <motion.div
@@ -43,7 +48,7 @@ const MobileMenu = () => {
         ></MobileNavbutton>
       </div>
     </motion.div>
-  );
-};
+  )
+}
 
-export default MobileMenu;
+export default MobileMenu

@@ -1,16 +1,14 @@
-import React from "react";
-import "./footer.css";
-import { Link } from 'react-router-dom';
-
-
+import './footer.css'
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 /**
- * Component
+ * Footer Component.
+ * Displays a footer containing different links.
  *
- * @param {*} props
- * @returns {*} 
+ * @returns {React.ReactElement} - Admin Customer Card Component.
  */
-const Footer = (props) => {
+const Footer = () => {
   return (
     <div className="footerContainer">
     <div className="footerLinksContainer">
@@ -50,7 +48,7 @@ const Footer = (props) => {
     &#169; Lillje Consulting AB Org. nr: 556829-4663
     </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

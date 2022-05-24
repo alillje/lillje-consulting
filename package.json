@@ -50,6 +50,12 @@
   },
   "devDependencies": {
     "eslint": "^8.15.0",
-    "eslint-plugin-jsdoc": "^39.3.0"
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsdoc": "^39.2.9",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.30.0"
   }
 }
